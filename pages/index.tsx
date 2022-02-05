@@ -1,5 +1,5 @@
-import { NextPage } from "next";
-import Head from "next/head";
+import { NextPage } from 'next';
+import Head from 'next/head';
 
 const Home: NextPage = () => (
   <>
@@ -9,7 +9,7 @@ const Home: NextPage = () => (
     </Head>
 
     <main>
-      <h1>Another Next App template</h1>
+      <h1>Building Something Great!</h1>
     </main>
   </>
 );

@@ -1,7 +1,7 @@
-import { AppProps } from "next/app";
+import { AppProps } from 'next/app';
 
-const App = ({ Component, pageProps }: AppProps) => (
-  <Component {...pageProps} />
-);
+type NextApp = (props: AppProps) => JSX.Element;
+
+const App: NextApp = ({ Component, pageProps }) => <Component {...pageProps} />;
 
 export default App;
