@@ -1,17 +1,13 @@
 import { NextPage } from 'next';
-import Head from 'next/head';
+
+import { Page } from '@/components';
 
 const Home: NextPage = () => (
-  <>
-    <Head>
-      <title>Next + TypeScript</title>
-      <meta name="description" content="Another Next App template" />
-    </Head>
-
+  <Page title="Next + TypeScript" description="Another Next App template">
     <main>
       <h1>Building Something Great!</h1>
     </main>
-  </>
+  </Page>
 );
 
 export default Home;
