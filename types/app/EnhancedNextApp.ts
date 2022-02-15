@@ -1,5 +1,13 @@
 import { AppProps } from 'next/app';
 
-export type EnhancedNextApp = (props: AppProps) => JSX.Element;
+import { EnhancedNextPage } from '@/types';
+
+export type EnhancedNextAppProps = AppProps & {
+  Component: EnhancedNextPage;
+};
+
+export type EnhancedNextApp = (
+  props: EnhancedNextAppProps
+) => React.ReactElement;
 
 export default EnhancedNextApp;
