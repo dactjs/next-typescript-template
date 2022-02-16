@@ -1,9 +1,7 @@
 import { NextPage } from 'next';
 
-type Component = React.ReactElement;
-
 export type EnhancedNextPage<P = unknown> = NextPage<P> & {
-  getLayout?: (page: Component) => Component;
+  getLayout?: (page: React.ReactElement) => React.ReactElement;
 };
 
 export default EnhancedNextPage;
