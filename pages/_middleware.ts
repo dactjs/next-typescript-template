@@ -1,7 +1,7 @@
-import { NextMiddleware } from '@/types';
+import { NextResponse, NextMiddleware } from 'next/server';
 
 const middleware: NextMiddleware = () => {
-  return new Response('Hello, world!');
+  return NextResponse.next();
 };
 
 export default middleware;
