@@ -1,11 +1,13 @@
 .layout {
   display: grid;
-  grid-template-rows: 5em 1fr;
   grid-template-columns: 1fr 3fr;
+  grid-template-rows: 5em 1fr;
   grid-template-areas:
     'sidebar header'
     'sidebar content';
+  width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 .header {
