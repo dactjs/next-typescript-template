@@ -5,7 +5,11 @@ export interface PageProps {
   description?: string;
 }
 
-export const Page: React.FC<PageProps> = ({ title, description, children }) => (
+export const Page: React.FC<React.PropsWithChildren<PageProps>> = ({
+  title,
+  description,
+  children,
+}) => (
   <>
     <Head>
       <title>{title}</title>
