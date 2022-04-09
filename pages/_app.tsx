@@ -1,3 +1,5 @@
+import '@/styles/normalize.css';
+
 import { EnhancedNextApp } from '@/types';
 
 const App: EnhancedNextApp = ({ Component, pageProps }) => {
