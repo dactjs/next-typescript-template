@@ -5,16 +5,23 @@
   grid-template-areas:
     'sidebar header'
     'sidebar content';
+  height: 100vh;
 }
 
 .header {
+  display: grid;
   grid-area: header;
+  border-bottom: 1px solid gray;
 }
 
 .sidebar {
+  display: grid;
   grid-area: sidebar;
+  border-right: 1px solid gray;
 }
 
 .content {
+  display: grid;
   grid-area: content;
+  overflow: auto;
 }
